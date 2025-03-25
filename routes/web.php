@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+    return view ('home');
 })->name('home');
 Route::get('/daftar-produk', function () {
     return Inertia::render('daftar-produk');
